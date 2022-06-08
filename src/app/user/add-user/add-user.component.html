@@ -1,0 +1,54 @@
+<form [id]="formId" [formGroup]="form" autocomplete="off" >
+
+  <div fxLayout="row">
+
+  <div
+        fxLayout="row wrap"
+        fxLayoutGap="10px"
+        fxFlex="100%"
+        fxLayoutAlign="flex-start"
+  >
+
+  <div
+        fxLayout="column"
+        fxFlex="0 1 calc(33.33% - 10px)"
+  >
+    <label > First Name</label>
+        <mat-form-field
+            appearance="outline" >
+            <input matInput formControlName="first_name">
+        </mat-form-field>
+  </div>
+
+  <div
+  fxLayout="column"
+  fxFlex="0 1 calc(33.33% - 10px)"
+  >
+  <label > Last Name</label>
+    <mat-form-field
+        appearance="outline" >
+        <input matInput formControlName="last_name">
+    </mat-form-field>
+  </div>
+
+
+  <div
+    fxLayout="column"
+    fxFlex="0 1 calc(33.33% - 10px)"
+    >
+    <label> Address</label>
+      <mat-form-field
+          appearance="outline" >
+          <input matInput formControlName="address">
+      </mat-form-field>
+    </div>
+
+
+    <button mat-raised-button type="button" (click)="onButtonClick()">
+      Submit
+    </button>
+
+  </div>
+</div>
+
+</form>
